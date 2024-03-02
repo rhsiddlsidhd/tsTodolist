@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>할 일 목록</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <article class="todo-container">
+        <section class="input-wrapper">
+          <div class="input-content">
+            <h1>할 일 목록</h1>
+            <section>
+              <h3>해야 할 일</h3>
+              <section>
+                <form>
+                  <label for="taskInput">
+                    <input type="text" id="taskInput" />
+                  </label>
+                </form>
+                <div class="taskInput-button">
+                  <button type="submit" id="taskInputBtn">추가</button>
+                </div>
+              </section>
+            </section>
+          </div>
+          <aside class="image-content">
+            <img src="../images/web-design-gac04113f1_640.jpg" alt="이미지" />
+          </aside>
+        </section>
+        <section class="task-wrapper">
+          <div class="task-box">
+            <div class="checkbox-header">
+              <label for="totaltask">
+                <input type="checkbox" id="totaltask" name="checkboxGroup" />
+              </label>
+              <button class="total-delete" onclick="totalDelete()">
+                전체삭제
+              </button>
+              <button class="multi-delete" onclick="handleMultiDelete()">
+                선택삭제
+              </button>
+            </div>
+            <div class="task-items-box">
+              <!-- 추가 -->
+              <!-- *** -->
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

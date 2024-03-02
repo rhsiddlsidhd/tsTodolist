@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "strict": false,
+    "moduleDetection": "force" //각각의 파일을 어떤 모듈로 감지할것이냐~
+  },
+  "include": ["src"]
+}
